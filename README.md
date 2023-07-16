@@ -1,5 +1,8 @@
 # kehadiran-cron
-
+## Deployment
+```
+source .env && ./cron.sh
+```
 ## EC2
 * `ec2-18-136-207-155.ap-southeast-1.compute.amazonaws.com`
 ## How to
