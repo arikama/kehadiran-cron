@@ -17,6 +17,10 @@ while true; do
     run_cmd "git fetch"
     run_cmd "git reset --hard origin/main"
 
+    log_info "running scraper"
+    run_cmd "python3 $SCRAPER_BIN"
+    log_info "scraper done"
+
     log_info "running parser"
     run_cmd "$PARSER_BIN --pdf-dir=$PARSER_PDF_DIR --out-dir=$PARSER_OUT"
     log_info "parser done"
